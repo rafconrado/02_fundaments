@@ -40,3 +40,18 @@ console.log(a)
 const ann: string = "Teste"
 
 let inf = "Teste"
+
+//ann = 1 
+//inf = 1
+
+console.log("Testando 2")
+
+//desafio 
+
+const n: number = 10
+
+const numberToString = n.toString()
+
+const printMyNumber: string = `Imprima o ${numberToString}`
+
+console.log(printMyNumber)
