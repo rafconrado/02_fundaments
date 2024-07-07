@@ -32,4 +32,4 @@ function soma(a: number, b: number){
     console.log(a + b)
 }
 
-soma(5,10)
+soma(5,15)

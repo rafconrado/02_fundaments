@@ -55,3 +55,11 @@ const numberToString = n.toString()
 const printMyNumber: string = `Imprima o ${numberToString}`
 
 console.log(printMyNumber)
+
+//
+
+function somar(a: number, b: number) {
+    console.log(a + b)
+}
+
+somar(5, 5)
