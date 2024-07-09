@@ -20,3 +20,21 @@ function soma(a, b) {
     console.log(a + b);
 }
 soma(5, 15);
+// 5 - Return Function
+function greeting(name) {
+    return `Olá ${name}`;
+}
+console.log(greeting('Rafael'));
+// 6 - Function anonymous
+setTimeout(function () {
+    const sallary = 1420;
+    //console.log(parseFloat(sallary))
+    //console.log(sallary)
+}, 2000);
+// 7 - Types of object
+function passCoordinates(coord) {
+    console.log("X cordinates: " + coord.x);
+    console.log("X cordinates: " + coord.y);
+}
+const objCoord = { x: 329, y: 84.2 };
+passCoordinates(objCoord);

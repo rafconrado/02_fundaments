@@ -33,3 +33,28 @@ function soma(a: number, b: number){
 }
 
 soma(5,15)
+
+// 5 - Return Function
+function greeting(name: string): string {
+    return `Olá ${name}`
+}
+
+console.log(greeting('Rafael'))
+
+// 6 - Function anonymous
+setTimeout(function(){
+    const sallary: number = 1420
+
+    //console.log(parseFloat(sallary))
+    //console.log(sallary)
+}, 2000)
+
+// 7 - Types of object
+function passCoordinates(coord: {x: number, y:number}) {
+    console.log("X cordinates: " + coord.x)
+    console.log("X cordinates: " + coord.y)
+}
+
+const objCoord = {x: 329, y: 84.2}
+
+passCoordinates(objCoord)
