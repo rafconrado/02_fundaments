@@ -58,3 +58,21 @@ function passCoordinates(coord: {x: number, y:number}) {
 const objCoord = {x: 329, y: 84.2}
 
 passCoordinates(objCoord)
+
+//
+
+const pessoaObj: {nome: string, surname: string} = {nome:"Rafael", surname:"Conrado"}
+
+//props opcionais
+
+function showNumbers(a: number, b: number, c?: number){
+    console.log("A:" + a)
+    console.log("B:" + b)
+    if(c){
+        console.log("C:" + c)
+    }
+}
+
+showNumbers(5, 10, 15)
+showNumbers(20, 25)
+//showNumbers(30)
