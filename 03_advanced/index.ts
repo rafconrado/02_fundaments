@@ -76,3 +76,65 @@ function showNumbers(a: number, b: number, c?: number){
 showNumbers(5, 10, 15)
 showNumbers(20, 25)
 //showNumbers(30)
+
+//validando argumentos opcionais
+function advacedGreeting(firstName: string, lastName?: string){
+    
+    if(lastName !== undefined){
+        return(`Olá, ${firstName} ${lastName}, tudo bem?`)
+    }
+
+    return(`Olá, ${firstName}, tudo bem?`)
+}
+
+console.log(advacedGreeting("Rafael", "Conrado"))
+console.log(advacedGreeting("de Souza"))
+
+//union type
+function showBalance(balance: string | number){
+    console.log(`O saldo da conta é R$${balance}`)
+}
+
+showBalance(500)
+showBalance("100")
+
+//advanced
+function showUserRole(role: boolean | string){
+    if(typeof role === "boolean"){
+        return "Usuário não aprovado!"
+    }
+
+    return `A função do usuário é: ${role}`
+}
+
+console.log(showUserRole(false))
+console.log(showUserRole("Admin"))
+
+//type alias
+type ID = string | number
+
+function showId(id: ID){
+    console.log(`O ID é: ${id}`)
+}
+
+showId(1515)
+showId("2020")
+
+//interface
+interface Point { 
+    x: number
+    y: number
+    z: number
+}
+
+function showCoords(obj: Point){
+    console.log(`X: ${obj.x} Y:${obj.y} Z:${obj.z}`)
+}
+
+const coordObj: Point={
+    x:10,
+    y:15,
+    z:20
+}
+
+showCoords(coordObj)

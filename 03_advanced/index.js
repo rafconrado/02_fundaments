@@ -51,3 +51,41 @@ function showNumbers(a, b, c) {
 showNumbers(5, 10, 15);
 showNumbers(20, 25);
 //showNumbers(30)
+//validando argumentos opcionais
+function advacedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return (`Olá, ${firstName} ${lastName}, tudo bem?`);
+    }
+    return (`Olá, ${firstName}, tudo bem?`);
+}
+console.log(advacedGreeting("Rafael", "Conrado"));
+console.log(advacedGreeting("de Souza"));
+//union type
+function showBalance(balance) {
+    console.log(`O saldo da conta é R$${balance}`);
+}
+showBalance(500);
+showBalance("100");
+//advanced
+function showUserRole(role) {
+    if (typeof role === "boolean") {
+        return "Usuário não aprovado!";
+    }
+    return `A função do usuário é: ${role}`;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log(`O ID é: ${id}`);
+}
+showId(1515);
+showId("2020");
+function showCoords(obj) {
+    console.log(`X: ${obj.x} Y:${obj.y} Z:${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 15,
+    z: 20
+};
+showCoords(coordObj);
