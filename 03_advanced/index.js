@@ -89,3 +89,13 @@ const coordObj = {
     z: 20
 };
 showCoords(coordObj);
+const somePerson = { name: "Rafael", age: 30 };
+console.log(somePerson);
+//literal types
+let test;
+test = "teste";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção é ${direction}`);
+}
+showDirection("center");

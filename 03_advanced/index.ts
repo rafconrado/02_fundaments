@@ -138,3 +138,33 @@ const coordObj: Point={
 }
 
 showCoords(coordObj)
+
+//interface x type alias
+interface Person {
+    name: string
+}
+
+interface Person {
+    age: number
+}
+
+const somePerson: Person = {name: "Rafael", age: 30}
+
+console.log(somePerson)
+
+type personType = {
+    name: string
+}
+
+//literal types
+let test: "testando"
+
+test = "teste"
+
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center") {
+    console.log(`A direção é ${direction}`)
+}
+
+showDirection("center")
