@@ -89,3 +89,16 @@ const coordObj = {
     z: 20
 };
 showCoords(coordObj);
+const somePerson = { name: "Rafael", age: 22 };
+console.log(somePerson);
+//literal types
+let test = "testando";
+test = "testando";
+console.log(test);
+function showDirect(direcion) {
+    console.log(`A direção é ${direcion}`);
+}
+showDirect("center");
+//non null assertion operators
+const p = document.getElementById("some-p");
+console.log(p.innerText);
