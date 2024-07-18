@@ -169,3 +169,8 @@ showDirect("center")
 const p = document.getElementById("some-p")
 
 console.log(p!.innerText)
+
+//bigint
+let n = bigint
+
+n = 1000n

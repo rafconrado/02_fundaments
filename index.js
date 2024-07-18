@@ -33,3 +33,8 @@ const n = 10;
 const numberToString = n.toString();
 const printMyNumber = `Imprima o ${numberToString}`;
 console.log(printMyNumber);
+//
+function somar(a, b) {
+    console.log(a + b);
+}
+somar(5, 5);
